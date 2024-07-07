@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #333;
+  color: white;
+  height: 80px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d6efd8;
+}
+
+.container {
+  width: 500px;
+  padding: 50px;
+  background-color: #fff;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #508d4e;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  background-color: #eee;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: #80af81;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #508d4e;
+}
+
+.google-button {
+  margin-top: 10px;
+  background-color: #db4437;
+}
+
+.google-button:hover {
+  background-color: #c33c2e;
+}
