@@ -7,9 +7,8 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
-
-const Login = lazy(() => import("./components/Login"));
-const Register = lazy(() => import("./components/Register"));
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 const App = () => {
   return (

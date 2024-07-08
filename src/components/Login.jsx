@@ -14,7 +14,7 @@ const Login = () => {
       await signInWithEmailAndPassword(auth, email, password);
       navigate("/");
     } catch (error) {
-      alert(error.message);
+      console.log(error.message);
     }
   };
 
@@ -23,7 +23,7 @@ const Login = () => {
       await signInWithPopup(auth, googleProvider);
       navigate("/");
     } catch (error) {
-      alert(error.message);
+      console.log(error.message);
     }
   };
 
@@ -45,17 +45,21 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button type="submit">Login</button>
-          <button
-            type="button"
-            onClick={handleGoogleLogin}
-            className="google-button"
-          >
-            Login with Google
-          </button>
         </form>
         <h5>
-          Not registered? <Link to={"/register"}>Create an account</Link>
+          Don&apos;t have an account?
+          <Link to={"/register"}> Signup</Link>
         </h5>
+        <div className="or-divider">
+          <span>or</span>
+        </div>
+        <button
+          type="button"
+          onClick={handleGoogleLogin}
+          className="google-button"
+        >
+          Login with Google
+        </button>
       </div>
     </div>
   );

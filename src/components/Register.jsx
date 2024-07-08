@@ -26,7 +26,7 @@ const Register = () => {
       });
       navigate("/");
     } catch (error) {
-      alert(error.message);
+      console.log(error.message);
     }
   };
 
@@ -41,7 +41,7 @@ const Register = () => {
       }
       navigate("/");
     } catch (error) {
-      alert(error.message);
+      console.log(error.message);
     }
   };
 
@@ -69,13 +69,16 @@ const Register = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button type="submit">Register</button>
-          <button onClick={handleGoogleSignUp} className="google-button">
-            Sign Up with Google
-          </button>
         </form>
         <h5>
-          Already registered? <Link to={"/login"}>Login Now</Link>
+          Already have an account? <Link to={"/login"}>Login</Link>
         </h5>
+        <div className="or-divider">
+          <span>or</span>
+        </div>
+        <button onClick={handleGoogleSignUp} className="google-button">
+          Sign Up with Google
+        </button>
       </div>
     </div>
   );
